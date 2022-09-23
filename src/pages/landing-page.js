@@ -5,15 +5,16 @@ import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const LandingPage = () => (
-    <Layout id="landing-page">
+const LandingPageTest = () => (
+    <Layout>
         <SEO title="Landing Page" />
-        <section>
-            <div className="container lg:flex">
-                <div className="text-center lg:text-left lg:w-1/2">
+        <section className="flex items-center justify-center">
+            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-2 gap-4 p-5 w-full">
+                <div class="p-10">
                     <StaticImage
                         src="../images/logo.webp"
                         alt="Search Nerds"
+                        className="w-20 md:w-auto"
                     />
                     <h1 className="title-big font-bold leading-none uppercase">
                         Search Nerds!
@@ -24,50 +25,55 @@ const LandingPage = () => (
                     <p className="mt-8 md:mt-12">
                         <Button className='btn uppercase'>Request Pricing</Button>
                     </p>
-                    <div className="flex mt-10 gap-4">
-                        <div className="basis-1/4 justify-self-center">
+                    <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-4 mt-5">
+                        <div className="">
                             <StaticImage
                                 src="../images/google-partner.webp"
                                 alt="Search Nerds"
+                                height={50}
                             />
                         </div>
-                        <div className="basis-1/4 justify-self-center">
+                        <div className="justify-self-center">
                             <StaticImage
                                 src="../images/tiktok.webp"
                                 alt="Search Nerds"
+                                height={50}
                             />
                         </div>
-                        <div className="basis-1/4 justify-self-center">
+                        <div className="justify-self-center">
                             <StaticImage
                                 src="../images/semrush.webp"
                                 alt="Search Nerds"
+                                height={50}
                             />
                         </div>
-                        <div className="basis-1/4 justify-self-center">
+                        <div className="justify-self-center">
                             <StaticImage
                                 src="../images/shopify.webp"
                                 alt="Search Nerds"
+                                height={50}
                             />
                         </div>
                     </div>
                 </div>
-                <div className="lg:w-1/2 justify-center flex">
+                <div class="p-10 justify-center flex">
                     <StaticImage
-                        src="../images/workers.webp"
+                        src="../images/working-people.webp"
                         alt="Search Nerds Workers"
                     />
                 </div>
             </div>
         </section>
-        <section className="mt-32">
-            <div className="container lg:flex">
-                <div className="lg:w-1/2 justify-center flex">
+
+        <section className="flex items-center justify-center">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-2 gap-4 p-5 w-full">
+                <div class="p-10 justify-center flex">
                     <StaticImage
-                        src="../images/helping-chart.png"
+                        src="../images/helping-chart.webp"
                         alt="Search Nerds Workers"
                     />
                 </div>
-                <div className="text-center lg:text-left lg:w-1/2">
+                <div class="p-10 align-middle">
                     <p className="text-2xl lg:text-3xl xl:text-4xl font-bold uppercase">
                     Do you find yourself jumping from agency to agency, just not able to get the results you want?
                     </p>
@@ -86,9 +92,10 @@ const LandingPage = () => (
                 </div>
             </div>
         </section>
-        <section className="mt-32">
-            <div className="container lg:flex">
-                <div className="text-center lg:text-left lg:w-1/2">
+
+        <section className="flex items-center justify-center">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-2 gap-4 p-5 w-full">
+                <div class="p-10">
                     <p className="text-2xl lg:text-3xl xl:text-3xl font-bold leading-normal uppercase">
                     You’re sales are just not where they need to be. This is not just a money problem, it’s a time problem!
                     </p>
@@ -105,7 +112,7 @@ const LandingPage = () => (
                         <Button className='btn uppercase'>Lets Chat</Button>
                     </p>
                 </div>
-                <div className="lg:w-1/2 justify-center flex">
+                <div class="p-10 justify-center flex">
                     <StaticImage
                         src="../images/sales.png"
                         alt="Search Nerds Workers"
@@ -113,15 +120,16 @@ const LandingPage = () => (
                 </div>
             </div>
         </section>
-        <section className="mt-32">
-            <div className="container lg:flex">
-                <div className="lg:w-1/2 justify-center flex">
+
+        <section className="flex items-center justify-center">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-2 gap-4 p-5 w-full">
+                <div class="p-10">
                     <StaticImage
                         src="../images/data-vector.png"
                         alt="Search Nerds Workers"
                     />
                 </div>
-                <div className="text-center lg:text-left lg:w-1/2">
+                <div class="p-10">
                     <p className="text-2xl lg:text-3xl xl:text-3xl font-bold leading-normal uppercase">
                         At Search Nerds you get what you see.
                     </p>
@@ -152,9 +160,10 @@ const LandingPage = () => (
                 </div>
             </div>
         </section>
-        <section className="mt-32">
-            <div className="container lg:flex">
-                <div className="text-center lg:text-left lg:w-1/2 pr-40">
+
+        <section className="flex items-center justify-center">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-2 gap-4 p-5 w-full">
+                <div class="p-10">
                     <StaticImage
                         src="../images/google-partner.webp"
                         alt="Search Nerds Workers"
@@ -179,7 +188,7 @@ const LandingPage = () => (
                         <Button className='btn uppercase'>GET A FREE ACCOUNT HEALTH CHECK</Button>
                     </p>
                 </div>
-                <div className="lg:w-1/2 justify-center flex">
+                <div class="p-10 justify-center flex">
                     <StaticImage
                         src="../images/target-vector.png"
                         alt="Search Nerds Workers"
@@ -187,7 +196,8 @@ const LandingPage = () => (
                 </div>
             </div>
         </section>
-    </Layout>
-)
 
-export default LandingPage
+    </Layout>
+    )
+
+export default LandingPageTest
